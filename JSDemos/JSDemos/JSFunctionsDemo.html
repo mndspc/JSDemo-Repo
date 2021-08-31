@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JS Functions Demo</title>
+    <script src="JavaScript.js"></script>
+    <script>
+    function CallSum() {
+        var x = Sum('txt1', 'txt2');
+        document.getElementById("result").innerHTML = x;
+    }
+    </script>
+</head>
+<body>
+    Number1:<input id="txt1" type="text" value="" />
+    Number2: <input id="txt2" type="text" value="" />
+    <input type="button" value="Sum" onclick="CallSum()" />
+    <br />
+    Ans:<span id="result"></span>
+
+    <input type="button" value="Show Result" onclick="Sum1('txt1', 'txt2')"
+</body>
+</html>
