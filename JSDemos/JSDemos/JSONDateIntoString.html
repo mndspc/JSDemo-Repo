@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>To Convert JSON String into a Date</title>
+    <script>
+        function JSONToDate() {
+            const text = '{"name":"scott","dob":"1980-02-03","city":"Pune"}';
+            //Convert a string into a date using reviver function
+            const obj = JSON.parse(text, function (key, value) {
+                if (key == "dob") {
+                    return new Date(value);
+                } else {
+                    return value;
+                }
+            });
+            document.getElementById("p1").innerHTML = obj.dob;
+        }
+    </script>
+</head>
+<body onload="JSONToDate()">
+    <p id="p1"></p>
+</body>
+</html>

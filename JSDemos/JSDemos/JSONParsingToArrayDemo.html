@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Parsing a JSON Array</title>
+    <script>
+        function ParseJSONArray() {
+            const text = '["Ford","BMW","Audi","Fiat"]';
+            const myArray = JSON.parse(text);
+            document.getElementById("p1").innerHTML = myArray.toString();
+        }
+    </script>
+</head>
+<body onload="ParseJSONArray()">
+<p id="p1"></p>
+</body>
+</html>
