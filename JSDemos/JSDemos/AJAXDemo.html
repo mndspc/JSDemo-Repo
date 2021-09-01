@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 5px;
+        }
+    </style>
+    <meta charset="utf-8" />
+    <title>AJAX Demo</title>
+    <script>
+        function Message() {
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function () {
+                document.getElementById("p1").innerHTML = this.responseText;
+            }
+            xhttp.open("GET", "TextFile1.txt");
+            xhttp.send();
+        }
+        function Openurl() {
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function () {
+                document.getElementById("p1").innerHTML = this.responseText;
+            }
+            xhttp.open("GET", "demo_get2.asp?fname=Henry&lname=Ford");
+            xhttp.send();
+        }
+
+        function myFunction(xml) {
+            const xmlDoc = xml.responseXML;
+            const x = xmlDoc.getElementsByTagName("CD");
+            let table = "<tr><th>Artist</th><th>Title</th></tr>";
+            for (let i = 0; i < x.length; i++) {
+                table += "<tr><td>" +
+                    x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+                    "</td><td>" +
+                    x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+                    "</td></tr>";
+            }
+            document.getElementById("demo").innerHTML = table;
+        }
+
+        function loadDoc() {
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function () {
+                myFunction(this);
+            }
+            xhttp.open("GET", "cd_catalog.xml");
+            xhttp.send();
+        }
+    </script>
+</head>
+<body>
+    <p id="p1"></p>
+    <button type="submit" onclick="Message()">Click here</button>
+    <button type="submit" onclick="Openurl()">Click here to read url</button>
+    <table id="demo"></table>
+    <button type="button" onclick="loadDoc()">Click to Present XML Doc</button>
+</body>
+</html>

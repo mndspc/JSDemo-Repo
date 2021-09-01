@@ -67,12 +67,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AJAXDemo.html" />
+    <Content Include="cd_catalog.xml" />
     <Content Include="ConstDemo.html" />
     <Content Include="InnerHTMLDemo.html" />
+    <Content Include="IntroJSONDemo.html" />
     <Content Include="JavaScript.js" />
     <Content Include="JSArrayDemo.html" />
+    <Content Include="JSConditionsDemo.html" />
     <Content Include="JSEventsDemo.html" />
     <Content Include="JSFunctionsDemo.html" />
+    <Content Include="JSLoopsDemo.html" />
     <Content Include="JSNumbersDemo.html" />
     <Content Include="JSObjectsDemo.html" />
     <Content Include="JSStringsDemo.html" />
@@ -80,7 +85,9 @@
     <Content Include="JSTypeOperatorsDemo.html" />
     <Content Include="JSVariablesDemo.html" />
     <Content Include="letKeywordDemo.html" />
+    <Content Include="parseJSONDemo.html" />
     <Content Include="ScriptTagDemo.html" />
+    <Content Include="TextFile1.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

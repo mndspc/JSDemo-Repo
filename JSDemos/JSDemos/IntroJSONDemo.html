@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Basics of JSON</title>
+    <script>
+        function PrintJSON() {
+            student = { rollNo: 12, name: "scott", city: "Pune" };
+            document.getElementById("p1").innerHTML = student.rollNo + " " + student.name + " " + student.city;
+        }
+    </script>
+</head>
+<body onload="PrintJSON()">
+    <p id="p1"></p>
+</body>
+</html>

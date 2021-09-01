@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JSON Parse</title>
+    <script>
+        function JSONParse() {
+            const txt = '{ "rollNo": 12, "name": "scott", "city": "Pune" }';
+            const obj = JSON.parse(txt);
+            document.getElementById("p1").innerHTML = obj.rollNo + " " + obj.name + " " + obj.city;
+        }
+    </script>
+</head >
+<body onload="JSONParse()">
+    <p id="p1"></p>
+</body>
+</html>
