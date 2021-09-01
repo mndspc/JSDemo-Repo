@@ -70,7 +70,12 @@
     <Content Include="ConstDemo.html" />
     <Content Include="InnerHTMLDemo.html" />
     <Content Include="JavaScript.js" />
+    <Content Include="JSArrayDemo.html" />
+    <Content Include="JSEventsDemo.html" />
     <Content Include="JSFunctionsDemo.html" />
+    <Content Include="JSNumbersDemo.html" />
+    <Content Include="JSObjectsDemo.html" />
+    <Content Include="JSStringsDemo.html" />
     <Content Include="JSTypeConversionDemo.html" />
     <Content Include="JSTypeOperatorsDemo.html" />
     <Content Include="JSVariablesDemo.html" />
