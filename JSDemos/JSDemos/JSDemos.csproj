@@ -82,6 +82,7 @@
     <Content Include="JSNumbersDemo.html" />
     <Content Include="JSObjectsDemo.html" />
     <Content Include="JSONDateIntoString.html" />
+    <Content Include="JSONNestedDemo.html" />
     <Content Include="JSONObjectsDemo.html" />
     <Content Include="JSONStringifyDemo.html" />
     <Content Include="JSStringsDemo.html" />
